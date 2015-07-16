@@ -16,7 +16,6 @@
 		687917C11B549FB6005A02B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 687917BF1B549FB6005A02B0 /* LaunchScreen.xib */; };
 		687917CD1B549FB6005A02B0 /* CellHeightDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 687917CC1B549FB6005A02B0 /* CellHeightDemoTests.m */; };
 		687917D81B54A091005A02B0 /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 687917D71B54A091005A02B0 /* DemoTableViewCell.m */; };
-		687917DA1B553E8E005A02B0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 687917D91B553E8E005A02B0 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,6 @@
 		687917CC1B549FB6005A02B0 /* CellHeightDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellHeightDemoTests.m; sourceTree = "<group>"; };
 		687917D61B54A091005A02B0 /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
 		687917D71B54A091005A02B0 /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
-		687917D91B553E8E005A02B0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 		687917AD1B549FB6005A02B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				687917D91B553E8E005A02B0 /* icon.png */,
 				687917AE1B549FB6005A02B0 /* Info.plist */,
 				687917AF1B549FB6005A02B0 /* main.m */,
 			);
@@ -212,7 +209,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687917DA1B553E8E005A02B0 /* icon.png in Resources */,
 				687917BC1B549FB6005A02B0 /* Main.storyboard in Resources */,
 				687917C11B549FB6005A02B0 /* LaunchScreen.xib in Resources */,
 				687917BE1B549FB6005A02B0 /* Images.xcassets in Resources */,

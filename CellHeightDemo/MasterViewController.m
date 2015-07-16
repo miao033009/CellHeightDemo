@@ -26,12 +26,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.tableView.estimatedRowHeight = 69;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.objects = [NSMutableArray arrayWithArray:@[@"In the case of topLayoutGuide, the property indicates the highest vertical extent for content that you don't want",
-                                                    @"In the case of topLayoutGuide, the property indicates the highest  (such as a status or navigation bar) vertical extent for content that you don't want to appear behind a translucent or transparent UIKit bar .",
-                                                    @"In the case of topLayoutGuide",
-                                                    @"In the case of topLayoutGuide, the property indicates the highest vertical extent for content that you don't want to appear behind a translucent or transparent UIKit bar (such as a status or navigation bar). So, if your view controller has been pushed onto a UINavigationController stack, topLayoutGuide will tell you how many points from the top of the screen the status bar and navigation bar cover. You can use this value scroll content in a UIScrollView to just below the navigation bar or ensure other content in your view isn't being covered by the UINavigationBar.",
-                                                    @"UINavigationController stack, topLayoutGuide will tell you how many points from the top of the screen the status bar and navigation bar cover. You can use this value scroll content in a UIScrollView to just below the navigation bar or ensure other content in your view isn't being covered by the UINavigationBar."
-                                                    ]];
+    self.objects = [NSMutableArray arrayWithArray:@[@"Pictures: Arsenal train in Singapore",@"The Arsenal squad prepared for their Barclays Asia Trophy opener against a Singapore Select XI with a training session in humid conditions on Tuesday.",@"It was the players' first workout of the day at the American School and our club photographer sent back these exclusive images.",@"Copyright 2015 The Arsenal Football Club plc. Permission to use quotations from this article is granted subject to appropriate credit being given to www.arsenal.com as the source",@"Wenger - Cup win has given us confidence",@"Arsène Wenger says that back-to-back FA Cup wins have given Arsenal more belief going into the new Premier League season."]];
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
@@ -55,7 +50,8 @@
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([[segue identifier] isEqualToString:@"showDetail"])
+    {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = self.objects[indexPath.row];
 //        [[segue destinationViewController] setDetailItem:object];
